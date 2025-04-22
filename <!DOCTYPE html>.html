@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: lightgray;
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 70px 1fr 70px;
+        grid-template-areas:
+          "header header header"
+          "aside main main"
+          "footer footer footer";
+        height: 100vh;
+      }
+      header {
+        background-color: lightpink;
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      aside {
+        background-color: lightyellow;
+        grid-area: aside;
+        height: 100%;
+      }
+      main {
+        background-color: lightgreen;
+        grid-area: main;
+        margin-top: auto;
+        height: 100%;
+      }
+      footer {
+        background-color: lightblue;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>Home</div>
+        <div>Logout</div>
+      </header>
+      <aside>ASIDE</aside>
+      <main>MAIN</main>
+      <footer>FOOTER</footer>
+    </div>
+  </body>
+</html>
