@@ -707,7 +707,7 @@ export default function CSSLayoutsExtendedPresentation() {
 
       {/* Slide 10: Quick Demo */}
       <div className="bg-white p-8 rounded-lg shadow-md mb-8">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">Live Demo</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-800">TLDR;</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -844,25 +844,23 @@ export default function CSSLayoutsExtendedPresentation() {
         <div className="bg-white/10 p-4 rounded-lg mb-6">
           <h3 className="font-bold mb-2">Resources to Learn More</h3>
           <ul className="space-y-1">
-            <li className="flex items-center gap-2">
-              <ExternalLink className="w-4 h-4 flex-shrink-0" />
-              <span>CSS-Tricks: A Complete Guide to Flexbox</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <ExternalLink className="w-4 h-4 flex-shrink-0" />
-              <span>CSS-Tricks: A Complete Guide to Grid</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <ExternalLink className="w-4 h-4 flex-shrink-0" />
-              <span>MDN Web Docs: Flexbox & Grid</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <ExternalLink className="w-4 h-4 flex-shrink-0" />
-              <span>Flexbox Froggy & Grid Garden (games)</span>
-            </li>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Relationship_of_grid_layout_with_other_layout_methods"
+            >
+              <li className="flex items-center gap-2">
+                <ExternalLink className="w-4 h-4 flex-shrink-0" />
+                <span>MDN Web Docs: Flexbox & Grid</span>
+              </li>
+            </a>
+            <a target="_blank" href="https://flexboxfroggy.com/">
+              <li className="flex items-center gap-2">
+                <ExternalLink className="w-4 h-4 flex-shrink-0" />
+                <span>Flexbox Froggy & Grid Garden (games)</span>
+              </li>
+            </a>
           </ul>
         </div>
-
         <p className="text-lg">Questions?</p>
       </div>
     </div>
