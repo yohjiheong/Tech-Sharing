@@ -747,10 +747,10 @@ export default function CSSLayoutsExtendedPresentation() {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 mt-6 text-gray-600">
+        {/* <div className="flex items-center gap-2 mt-6 text-gray-600">
           <Smartphone className="w-5 h-5" />
           <p>Both are responsive, but handle resizing differently</p>
-        </div>
+        </div> */}
       </div>
 
       {/* NEW: Slide 11: Browser Support */}
